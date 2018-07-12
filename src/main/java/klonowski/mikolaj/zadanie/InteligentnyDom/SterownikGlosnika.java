@@ -13,8 +13,8 @@ public class SterownikGlosnika {
         turnOn(stacjaPogodowa);
     }
 
-    public void turnOn(StacjaPogodowa stacjaPogodowa){
-        System.out.println("Dzień dobry, Dzisiejsza temperatura "+stacjaPogodowa.getTemp()+" i "+stacjaPogodowa.getWeather()+". To będzie dobry dzień!");
+    public void turnOn(StacjaPogodowa stacjaPogodowa) {
+        System.out.println("Dzień dobry, Dzisiejsza temperatura " + stacjaPogodowa.getTemp() + " i " + stacjaPogodowa.getWeather() + ". To będzie dobry dzień!");
 
     }
 

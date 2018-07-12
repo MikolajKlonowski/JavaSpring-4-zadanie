@@ -8,9 +8,9 @@ public class SterownikRolet {
 
     public SterownikRolet(StacjaPogodowa stacjaPogodowa) {
         this.stacjaPogodowa = stacjaPogodowa;
-        if (stacjaPogodowa.getWeather().equals("Jest słonecznie")){
-            System.out.println(stacjaPogodowa.getWeather()+". Zasłaniam rolety");
-        }else
-            System.out.println(stacjaPogodowa.getWeather()+". Podnosze do góry rolety");
+        if (stacjaPogodowa.getWeather().equals("Jest słonecznie")) {
+            System.out.println(stacjaPogodowa.getWeather() + ". Zasłaniam rolety");
+        } else
+            System.out.println(stacjaPogodowa.getWeather() + ". Podnosze do góry rolety");
     }
 }

@@ -8,9 +8,9 @@ public class SterownikPieca {
 
     public SterownikPieca(StacjaPogodowa stacjaPogodowa) {
         this.stacjaPogodowa = stacjaPogodowa;
-        if (stacjaPogodowa.getTemp() <15){
+        if (stacjaPogodowa.getTemp() < 15) {
             System.out.println("Jest zimno uruchamiam piec");
-            }else
+        } else
             System.out.println("Jest ciepło nie uruchamiam pieca");
     }
 }

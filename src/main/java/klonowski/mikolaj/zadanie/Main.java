@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
-SmartHome smartHome = new SmartHome();
+
+    SmartHome smartHome = new SmartHome();
 
 }

@@ -3,16 +3,15 @@ package klonowski.mikolaj.zadanie.InteligentnyDom;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
+
 @Component
 public class StacjaPogodowa {
 
     public int temp;
 
-
-
     public StacjaPogodowa() {
         System.out.println("Pobieram informacje o pogodzie");
-            }
+    }
 
     public int getTemp() {
         return getTemperature();
@@ -23,16 +22,16 @@ public class StacjaPogodowa {
         return random.nextInt(61) - 25;
     }
 
-    private int getTemperature(){
+    private int getTemperature() {
         temp = random();
-     return temp;}
+        return temp;
+    }
 
 
-
-    public String getWeather(){
-       if (temp<0){
-           return "Nie jest słonecznie";
-       }else return "Jest słonecznie";
+    public String getWeather() {
+        if (temp < 0) {
+            return "Nie jest słonecznie";
+        } else return "Jest słonecznie";
     }
 
 
