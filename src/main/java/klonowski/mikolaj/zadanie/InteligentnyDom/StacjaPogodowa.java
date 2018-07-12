@@ -7,23 +7,19 @@ import java.util.Random;
 public class StacjaPogodowa {
 
     public int temp;
-    Random random = new Random();
+
 
 
     public StacjaPogodowa() {
         System.out.println("Pobieram informacje o pogodzie");
-
-
-
-
-
-    }
+            }
 
     public int getTemp() {
-        return temp;
+        return getTemperature();
     }
 
     private int random() {
+        Random random = new Random();
         return random.nextInt(61) - 25;
     }
 

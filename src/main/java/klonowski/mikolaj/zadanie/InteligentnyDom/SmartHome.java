@@ -8,10 +8,10 @@ import java.util.Random;
 public class SmartHome {
 
     public SmartHome() {
-        Random random = new Random();
+
         StacjaPogodowa stacjaPogodowa = new StacjaPogodowa();
-        SterownikGlosnika sterownikGlosnika = new SterownikGlosnika(stacjaPogodowa);
-        SterownikPieca sterownikPieca = new SterownikPieca(stacjaPogodowa);
-        SterownikRolet sterownikRolet = new SterownikRolet(stacjaPogodowa);
+        new SterownikGlosnika(stacjaPogodowa);
+        new SterownikPieca(stacjaPogodowa);
+        new SterownikRolet(stacjaPogodowa);
     }
 }
