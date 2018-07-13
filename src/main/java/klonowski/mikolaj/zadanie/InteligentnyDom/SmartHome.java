@@ -9,9 +9,7 @@ public class SmartHome {
 
     public SmartHome() {
 
-        StacjaPogodowa stacjaPogodowa = new StacjaPogodowa();
-        new SterownikGlosnika(stacjaPogodowa);
-        new SterownikPieca(stacjaPogodowa);
-        new SterownikRolet(stacjaPogodowa);
+
+
     }
 }
