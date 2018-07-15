@@ -3,11 +3,16 @@ package klonowski.mikolaj.zadanie.InteligentnyDom;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SterownikRolet {
-    StacjaPogodowa stacjaPogodowa;
+public class SterownikRolet implements Sterownik{
+    private StacjaPogodowa stacjaPogodowa;
 
     public SterownikRolet(StacjaPogodowa stacjaPogodowa) {
         this.stacjaPogodowa = stacjaPogodowa;
+
+    }
+
+    @Override
+    public void run() {
         if (stacjaPogodowa.getWeather().equals("Jest słonecznie")) {
             System.out.println(stacjaPogodowa.getWeather() + ". Zasłaniam rolety");
         } else

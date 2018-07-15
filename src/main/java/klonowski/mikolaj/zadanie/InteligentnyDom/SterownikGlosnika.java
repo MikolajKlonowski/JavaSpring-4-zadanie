@@ -3,19 +3,21 @@ package klonowski.mikolaj.zadanie.InteligentnyDom;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SterownikGlosnika {
+public class SterownikGlosnika implements Sterownik {
 
 
-    StacjaPogodowa stacjaPogodowa;
+  private   StacjaPogodowa stacjaPogodowa;
 
     public SterownikGlosnika(StacjaPogodowa stacjaPogodowa) {
         this.stacjaPogodowa = stacjaPogodowa;
-        turnOn(stacjaPogodowa);
+
     }
 
-    public void turnOn(StacjaPogodowa stacjaPogodowa) {
+
+
+    @Override
+    public void run() {
         System.out.println("Dzień dobry, Dzisiejsza temperatura " + stacjaPogodowa.getTemp() + " i " + stacjaPogodowa.getWeather() + ". To będzie dobry dzień!");
 
     }
-
 }
